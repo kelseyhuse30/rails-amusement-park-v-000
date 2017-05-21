@@ -1,0 +1,4 @@
+<%= render 'attraction', attraction: @attraction %>
+<%= button_to "Go on this ride", rides_new_path, method: :post, params: {'user[id]' => current_user.id, 'attraction[id]' => @attraction.id} %>
+
+<%= link_to 'Back', attractions_path %>

@@ -24,6 +24,7 @@ Capybara.configure do |config|
 end
 
 RSpec.configure do |config|
+  config.fail_fast = true
   config.include FactoryGirl::Syntax::Methods
 
   config.before(:suite) do
